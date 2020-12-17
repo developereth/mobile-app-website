@@ -1,0 +1,529 @@
+/*/////////////////////// Global style //////////////////////////*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
+/*/////////////////////// header //////////////////////////*/
+
+header {
+    padding-top: 10px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(106, 126, 234, 0.6), rgba(110, 75, 162, 0.7)), url("https://uupload.ir/files/68ls_bg--header.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem
+}
+
+
+/********************** nav **********************/
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-brand a {
+    font-size: 3rem;
+    color: #fafafa;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.menu-icons i {
+    font-size: 2rem;
+    color: #fafafa;
+}
+
+.close i {
+    color: #fff;
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    font-family: 'Amiri', serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/********************** header row **********************/
+
+.header--row {
+    display: flex;
+    width: 100%;
+}
+
+
+/**********************  col-1 **********************/
+
+.col-1 {
+    width: 50%;
+    text-align: left;
+}
+
+.col-1 h2 {
+    color: white;
+    font-size: 50px;
+    line-height: 52px;
+    font-family: 'Abel', sans-serif;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.col-1 p {
+    font-size: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+
+.col-1 a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #ffff;
+    font-size: 15px;
+}
+
+
+/**********************  col-2 **********************/
+
+.col-2 {
+    width: 50%;
+}
+
+.col-2 img {
+    width: 505px;
+    margin-top: 70px;
+}
+
+
+/**********************  wave **********************/
+header .wave--header  {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+
+/*/////////////////////// App Featurs //////////////////////////*/
+
+#app--features {
+    width: 100%;
+}
+
+#app--features h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 52px;
+    line-height: 22.92px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+#app--features p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 10 auto;
+}
+
+#app--features ul {
+    width: 100%;
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+#app--features ul li {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid #e1e1e1;
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+#app--features ul li img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+
+#app--features ul li p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#app--features ul li h3 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/*/////////////////////// banner //////////////////////////*/
+
+#banner {
+    position: relative;
+    background: linear-gradient(rgba(106, 126, 234, 0.6), rgba(110, 75, 162, 0.4)), url("https://uupload.ir/files/68ls_bg--header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#banner img {
+    float: right;
+    width: 400px;
+    height: 400px;
+    padding-top: 80px;
+}
+
+#banner h3 {
+    font-family: 'Abel', sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 120px;
+}
+
+#banner h3 span {
+    color: #F9A826;
+}
+
+#banner p {
+    font-family: cursive;
+    font-size: 24px;
+    color: white;
+    width: 380px;
+    margin-bottom: 50px;
+}
+
+#banner a {
+    text-decoration: none;
+    font-size: 16px;
+    background: #e1e1e1;
+    padding: 10px;
+    border-radius: 50px;
+    color: #000;
+}
+#banner .wave--banner {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+
+/*/////////////////////// footer //////////////////////////*/
+
+footer {
+    background: #343A40;
+    color: white;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+footer h2 {
+    font-family: "Pacifico";
+    padding-bottom: 20px;
+}
+
+footer ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer ul li {
+    width: 33%;
+}
+
+footer ul li h3 {
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+footer ul li div #social--icon {
+    display: inline-block;
+    width: 25px;
+    height: 40px;
+    color: #FFA94D;
+}
+
+footer ul li div a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*/////////////////////// copy right //////////////////////////*/
+
+.copy-right {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 5px;
+}
+
+
+/*/////////////////////// media query //////////////////////////*/
+
+
+/**********************  for x-small screen **********************/
+
+@media(max-width:576px) {
+    /* header */
+    .header--row .col-1 {
+        width: 100%;
+        padding-left: 25px;
+    }
+    .header--row .col-1 h2 {
+        padding-bottom: 20px;
+    }
+    .header--row .col-1 p {
+        padding-bottom: 30px;
+    }
+    .header--row .col-2 img {
+        display: none;
+    }
+    .wave--header img {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+    /* app features  */
+    #app--features p {
+        padding: 50px;
+    }
+    #app--features ul li {
+        width: 100%;
+        margin: 10px auto;
+    }
+    /* banner */
+    #banner img {
+        display: none;
+    }
+    #banner h3 {
+        width: 100%;
+        padding-top: 10px;
+    }
+    #banner .wave--banner {
+        display: none;
+    }
+    /* footer  */
+    footer ul {
+        width: 150%;
+    }
+    footer ul img {
+        display: none;
+    }
+    /* copy right  */
+    .copy-right{
+        font-size: 15px;
+    }
+}
+
+
+/**********************  for small screen  **********************/
+
+@media(min-width:577px) and (max-width:768px) {
+    /* header */
+    .header--row .col-1 {
+        width: 50%;
+        padding-left: 25px;
+    }
+    .header--row .col-1 h2 {
+        padding-bottom: 20px;
+    }
+    .header--row .col-1 p {
+        padding-bottom: 30px;
+    }
+    /* app features  */
+    #app--features p {
+        padding: 50px;
+    }
+    #app--features ul li {
+        width: 100%;
+        margin: 10px auto;
+    }
+    /* banner */
+    #banner img {
+        display: none;
+    }
+    #banner h3 {
+        width: 100%;
+        padding-top: 10px;
+    }
+    #banner .wave--banner {
+        display: none;
+    }
+    /* footer  */
+    footer ul {
+        width: 150%;
+    }
+    footer ul img {
+        display: none;
+    }
+    /* copy right  */
+    .copy-right{
+        font-size: 20px;
+    }
+}
+
+
+/**********************  for med screen **********************/
+
+@media(min-width:769px) and (max-width:992px) {
+    /* header */
+    .header--row .col-1 {
+        width: 50%;
+        padding-left: 25px;
+    }
+    .header--row .col-1 h2 {
+        padding-bottom: 20px;
+    }
+    .header--row .col-1 p {
+        padding-bottom: 30px;
+    }
+    /* app features  */
+    #app--features p {
+        padding: 50px;
+    }
+    #app--features ul li {
+        margin: 10px auto;
+        padding: 0%;
+        width: 100%;
+    }
+    #app--features ul li p {
+        width: 50%;
+        margin: 10px auto;
+        padding: 0%;
+    }
+    /* banner  */
+    #banner .wave--banner {
+        display: none;
+    }
+    #banner h3 {
+        width: 100%;
+        padding-top: 10px;
+    }
+}
+
+
+/**********************  for large screen **********************/
+
+@media(min-width:993px) and (max-width:1200px) {
+    /* app features  */
+    #app--features p {
+        padding: 50px;
+    }
+    #app--features ul li {
+        margin: 10px auto;
+        padding: 0%;
+        width: 100%;
+    }
+    #app--features ul li p {
+        width: 50%;
+        margin: 10px auto;
+        padding: 0%;
+    }
+}
+
+
+/**********************  for extra large **********************/
+
+@media(min-width:1200px) {
+}
